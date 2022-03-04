@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CABEÇALHO */
+
+header {
+  background-color: #2e948a;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  height: 117px;
+  justify-content: space-between;
+}
+
+header a {
+  margin-left: 6%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-header {
+  display: flex;
+  margin-right: 6%;
+}
+
+.menu-header-link {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fdfdfd;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+.contato {
+  margin: 3% auto;
+  max-width: 1600px;
+}
+
+.container-contato {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+form h1 {
+  color: #ff4081;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+form {
+  margin: 50px 50px;
+  padding-right: 20%;
+}
+
+input,
+textarea {
+  background: #ffffff;
+  border: 1px solid #686868;
+  box-sizing: border-box;
+  border-radius: 7px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #58555d;
+}
+
+button {
+  display: flex;
+  background: #ff4081;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-style: bold;
+  padding: 10px 35px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* RODAPE */
+
+footer {
+  background: #419488;
+  display: flex;
+  align-items: center;
+  height: 207px;
+  justify-content: space-around;
+}
+
+.menu-footer,
+.menu-mais-opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-footer-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.mais-opcoes-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 62px;
+  margin: 5px;
+  padding: 14px 41px;
+  width: 289px;
+  height: 51px;
+  text-align: center;
+}

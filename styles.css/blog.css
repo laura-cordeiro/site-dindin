@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CABEÇALHO */
+
+header {
+  background-color: #2e948a;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  height: 117px;
+  justify-content: space-between;
+}
+
+header a {
+  margin-left: 6%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-header {
+  display: flex;
+  margin-right: 6%;
+}
+
+.menu-header-link {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fdfdfd;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+.titulo {
+  margin: 3% auto;
+  max-width: 1600px;
+}
+
+.container-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+  /* padding: 30px 120px; */
+}
+
+.texto {
+  width: 45%;
+}
+
+.texto h1 {
+  color: #009688;
+  font-weight: 700;
+  font-size: 47px;
+}
+
+.texto p {
+  font-weight: 300;
+  font-size: 20px;
+  align-items: center;
+  text-justify: right;
+  color: #000000;
+}
+
+.posts {
+  max-width: 1600px;
+  background-color: #e5e5e5;
+  padding: 60px 60px;
+}
+
+.container-posts {
+  display: flex;
+  padding: 60px 60px;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.posts-texto {
+  padding: 20px auto;
+}
+
+.posts-texto h3 {
+  color: #ff4081;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.posts-texto p {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 300;
+  width: 500px;
+}
+
+/* RODAPE */
+
+footer {
+  background: #419488;
+  display: flex;
+  align-items: center;
+  height: 207px;
+  justify-content: space-around;
+}
+
+.menu-footer,
+.menu-mais-opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-footer-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.mais-opcoes-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 62px;
+  margin: 5px;
+  padding: 14px 41px;
+  width: 289px;
+  height: 51px;
+  text-align: center;
+}

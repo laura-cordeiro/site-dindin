@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CABEÇALHO */
+
+header {
+  background-color: #2e948a;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  height: 117px;
+  justify-content: space-between;
+}
+
+header a {
+  margin-left: 6%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-header {
+  display: flex;
+  margin-right: 6%;
+}
+
+.menu-header-link {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fdfdfd;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+/* BANNER */
+
+.banner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.texto h1 {
+  color: #ff4081;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.texto p {
+  color: #555555;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.quero-saber-mais {
+  text-decoration: none;
+  color: #ff4081;
+  font-size: 27px;
+  font-weight: 400;
+  padding: 8px 26px;
+  border: 2px solid #ff4081;
+  box-sizing: border-box;
+  border-radius: 62px;
+}
+
+/*CURSOS*/
+
+#cursos {
+  background-color: #f7f7f7;
+  padding: 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.descricao h3 {
+  color: #ff4081;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.descricao p {
+  font-size: 17px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.descricao {
+  width: 300px;
+  margin: 5%;
+}
+
+.comecar-agora {
+  background: #ff4081;
+  border-radius: 62px;
+  padding: 8px 13px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 40px;
+  width: 230px;
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+  padding: 60px 0;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.depoimentos h2 {
+  color: #009688;
+  font-size: 37px;
+  font-weight: 700;
+  padding: 0 60px;
+}
+
+.container-depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.depoimentos-texto {
+  display: flex;
+  width: 500px;
+  text-align: left;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.depoimentos-texto p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  padding: 30px;
+}
+
+/* BLOG */
+
+.blog {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.blog h2 {
+  color: #009688;
+  font-size: 37px;
+  font-weight: 700;
+  padding: 0 60px;
+}
+
+.container-blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.blog-texto h3 {
+  color: #2e948a;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.blog-texto p {
+  color: #000;
+  font-size: 20px;
+  margin-top: 0;
+  width: 320px;
+}
+
+.todos-posts {
+  text-decoration: none;
+  color: #ff4081;
+  font-size: 27px;
+  font-weight: 400;
+  padding: 8px 26px;
+  border: 2px solid #ff4081;
+  box-sizing: border-box;
+  border-radius: 62px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  width: 289px;
+}
+
+/* RODAPE */
+
+footer {
+  background: #419488;
+  display: flex;
+  align-items: center;
+  height: 207px;
+  justify-content: space-around;
+}
+
+.menu-footer,
+.menu-mais-opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-footer-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.mais-opcoes-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 62px;
+  margin: 5px;
+  padding: 14px 41px;
+  width: 289px;
+  height: 51px;
+  text-align: center;
+}

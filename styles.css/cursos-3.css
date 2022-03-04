@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CABEÇALHO */
+
+header {
+  background-color: #2e948a;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  height: 117px;
+  justify-content: space-between;
+}
+
+header a {
+  margin-left: 6%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-header {
+  display: flex;
+  margin-right: 6%;
+}
+
+.menu-header-link {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fdfdfd;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+.titulo {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-left: 6%;
+}
+
+.titulo h1 {
+  color: #ff4081;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.titulo p {
+  color: #555;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.cursos {
+  margin: 0% auto;
+  max-width: 1600px;
+}
+
+.descricao-cursos {
+  display: flex;
+  padding: 60px 150px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.descricao-cursos h2 {
+  color: #ff4081;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.descricao-cursos p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.descricao-cursos a {
+  background: #419488;
+  border-radius: 62px;
+  padding: 8px 13px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 40px;
+  width: 230px;
+}
+
+.divisao {
+  width: 1244px;
+  height: 3px;
+  background: #c4c4c4;
+  margin: 0 auto;
+}
+
+/* RODAPE */
+
+footer {
+  background: #419488;
+  display: flex;
+  align-items: center;
+  height: 207px;
+  justify-content: space-around;
+}
+
+.menu-footer,
+.menu-mais-opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-footer-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.mais-opcoes-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 62px;
+  margin: 5px;
+  padding: 14px 41px;
+  width: 289px;
+  height: 51px;
+  text-align: center;
+}
