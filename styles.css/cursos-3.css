@@ -1,144 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
-* {
-  font-family: 'Ubuntu', sans-serif;
+#principal {
+  padding: 40px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* CABEÇALHO */
-
-header {
-  background-color: #2e948a;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  height: 117px;
-  justify-content: space-between;
-}
-
-header a {
-  margin-left: 6%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.menu-header {
-  display: flex;
-  margin-right: 6%;
-}
-
-.menu-header-link {
-  margin: 10px 20px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fdfdfd;
-}
-
-/*CONTEÚDO PRINCIPAL*/
-
-.titulo {
-  margin: 0 auto;
-  max-width: 1600px;
-  padding-left: 6%;
-}
-
-.titulo h1 {
+#principal .wrapper h1 {
   color: #ff4081;
-  font-weight: 700;
   font-size: 60px;
-  margin-bottom: 0;
+  font-weight: 700;
 }
 
-.titulo p {
-  color: #555;
-  font-weight: 400;
+.subtitulo {
+  color: #555555;
   font-size: 20px;
-  margin-top: 0;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 
-.cursos {
-  margin: 0% auto;
-  max-width: 1600px;
-}
-
-.descricao-cursos {
+.container-cursos {
   display: flex;
-  padding: 60px 150px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
+  flex-direction: column;
 }
 
-.descricao-cursos h2 {
+.card-cursos {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+.descricao-curso {
+  padding: 40px;
+}
+
+.descricao-curso h2 {
   color: #ff4081;
   font-size: 35px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.descricao-cursos p {
-  color: #000;
+.descricao-curso p {
+  color: #000000;
   font-size: 18px;
+  margin-bottom: 40px;
   font-weight: 300;
-  margin-bottom: 50px;
 }
 
-.descricao-cursos a {
-  background: #419488;
+.descricao-curso a {
+  background: #2e948a;
   border-radius: 62px;
-  padding: 8px 13px;
   color: #fff;
   font-size: 20px;
-  font-weight: 400;
-  padding: 15px 40px;
-  width: 230px;
+  font-weight: 400px;
+  padding: 10px 40px;
 }
 
 .divisao {
-  width: 1244px;
-  height: 3px;
-  background: #c4c4c4;
-  margin: 0 auto;
+  height: 5px;
+  background-color: #c4c4c4;
+  width: 100%;
 }
 
-/* RODAPE */
+/* RESPONSIVIDADE */
 
-footer {
-  background: #419488;
-  display: flex;
-  align-items: center;
-  height: 207px;
-  justify-content: space-around;
-}
+@media (max-width: 768px) {
+  #principal {
+    padding: 20px;
+  }
 
-.menu-footer,
-.menu-mais-opcoes {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  #principal .wrapper h1 {
+    font-size: 40px;
+  }
+  .subtitulo {
+    font-size: 18px;
+  }
+  .container-cursos {
+    justify-content: center;
+    padding: 0;
+  }
 
-.menu-footer-link {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
+  .card-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
 
-.mais-opcoes-link {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 62px;
-  margin: 5px;
-  padding: 14px 41px;
-  width: 289px;
-  height: 51px;
-  text-align: center;
+  .card-cursos img {
+    width: 100%;
+  }
+
+  .descricao-curso {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .descricao-curso h2 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .descricao-curso p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .descricao-curso a {
+    font-size: 17px;
+    padding: 10px 20px;
+  }
+
+  .divisao {
+    margin: 20px auto;
+  }
 }

@@ -1,62 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
-* {
-  font-family: 'Ubuntu', sans-serif;
+#postagem .wrapper {
+  padding: 100px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* CABEÇALHO */
-
-header {
-  background-color: #2e948a;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  height: 117px;
-  justify-content: space-between;
-}
-
-header a {
-  margin-left: 6%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.menu-header {
-  display: flex;
-  margin-right: 6%;
-}
-
-.menu-header-link {
-  margin: 10px 20px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fdfdfd;
-}
-
-/*CONTEÚDO PRINCIPAL*/
-
-.postagem {
-  margin: 0 auto;
-  max-width: 1600px;
-  padding: 50px 204px;
-}
-
-.postagem h1 {
-  text-align: center;
-  margin-bottom: 0;
-  color: #ff4081;
-  font-size: 50px;
-  font-weight: 500;
-}
-
-.data {
+#postagem .wrapper .data {
   text-align: center;
   margin-top: 0;
   color: #9d9d9d;
@@ -64,100 +10,133 @@ a {
   font-weight: 300;
 }
 
-.postagem img {
+#postagem .wrapper img {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 50px auto;
 }
 
-.postagem p {
+#postagem h1 {
+  text-align: center;
+  margin-bottom: 0;
+  color: #ff4081;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+#postagem p {
   font-size: 18px;
   font-weight: 300;
+  margin-top: 20px;
+  text-align: justify;
 }
 
-.postagem h3 {
+#postagem h3 {
   color: #2e948a;
   font-size: 26px;
 }
 
+/* RESPONSIVIDADE POSTAGEM */
+
+@media (max-width: 768px) {
+  #postagem .wrapper {
+    padding: 20px;
+  }
+
+  #postagem h1 {
+    font-size: 30px;
+  }
+
+  #postagem .wrapper img {
+    margin: 10px auto;
+  }
+
+  #postagem p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  #postagem h3 {
+    font-size: 22px;
+  }
+}
+
 #cursos {
   background-color: #f7f7f7;
-  padding: 2% 0;
+}
+
+#cursos .wrapper {
+  padding: 100px;
+}
+
+.container-cursos {
   display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
   flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
+  gap: 70px;
 }
 
-#cursos h2 {
-  color: #ff4081;
-  font-size: 50px;
-  font-weight: 500;
-  text-align: center;
-  padding: 0 20%;
-}
-
-.descricao h3 {
-  color: #ff4081;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.descricao p {
-  font-size: 17px;
-  font-weight: 300;
-  padding-bottom: 20px;
-}
-
-.descricao {
-  width: 300px;
-  margin: 5%;
-}
-
-.comecar-agora {
-  background: #ff4081;
-  border-radius: 62px;
-  padding: 8px 13px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 15px 40px;
-  width: 230px;
-}
-
-/* RODAPE */
-
-footer {
-  background: #419488;
-  display: flex;
-  align-items: center;
-  height: 207px;
-  justify-content: space-around;
-}
-
-.menu-footer,
-.menu-mais-opcoes {
+.card-cursos {
+  margin-top: 20px;
+  max-width: 291px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu-footer-link {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
-
-.mais-opcoes-link {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 62px;
-  margin: 5px;
-  padding: 14px 41px;
-  width: 289px;
-  height: 51px;
+.card-cursos h3 {
+  color: #ff4081;
+  font-size: 25px;
+  font-weight: 700;
   text-align: center;
+  width: 344px;
+}
+
+.card-cursos p {
+  text-align: center;
+  font-size: 17px;
+  color: #000000;
+}
+
+.card-cursos a {
+  border-radius: 62px;
+  padding: 10px 40px;
+  border: 2px solid #ff4081;
+  color: #fff;
+  background-color: #ff4081;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* RESPONSIVIDADE CURSOS */
+
+@media (max-width: 768px) {
+  #cursos .wrapper {
+    padding: 10px;
+  }
+
+  .container-cursos {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card-cursos h3 {
+    font-size: 20px;
+  }
+
+  .card-cursos p {
+    font-size: 15px;
+  }
+
+  .card-cursos img {
+    width: 70%;
+  }
+
+  .card-cursos a {
+    border-radius: 62px;
+    padding: 10px 20px;
+    font-size: 17px;
+  }
 }

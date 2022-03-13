@@ -1,246 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
-* {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* CABEÇALHO */
-
-header {
-  background-color: #2e948a;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+#banner .wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 117px;
-  justify-content: space-between;
+  padding: 60px 0;
+  gap: 20px;
 }
 
-header a {
-  margin-left: 6%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.menu-header {
+.banner-texto {
   display: flex;
-  margin-right: 6%;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-.menu-header-link {
-  margin: 10px 20px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fdfdfd;
-}
-
-/*CONTEÚDO PRINCIPAL*/
-
-/* BANNER */
-
-.banner {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 60px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.texto h1 {
+.banner-texto h1 {
   color: #ff4081;
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 0;
 }
 
-.texto p {
-  color: #555555;
+.banner-texto p {
   font-size: 27px;
+  color: #555555;
   font-weight: 400;
 }
 
-.quero-saber-mais {
-  text-decoration: none;
+.banner-texto a {
+  border-radius: 62px;
+  padding: 10px 20px;
+  border: 2px solid #ff4081;
   color: #ff4081;
   font-size: 27px;
-  font-weight: 400;
-  padding: 8px 26px;
-  border: 2px solid #ff4081;
-  box-sizing: border-box;
-  border-radius: 62px;
 }
 
-/*CURSOS*/
+.banner-image {
+  padding: 40px;
+}
+
+/* RESPONSIVIDADE BANNER */
+
+@media (max-width: 768px) {
+  #banner .wrapper {
+    padding: 20px 0;
+  }
+  .banner-texto {
+    align-items: center;
+  }
+
+  .banner-texto h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .banner-texto p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .banner-texto a {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .banner-image {
+    display: none;
+  }
+}
 
 #cursos {
   background-color: #f7f7f7;
-  padding: 2% 0;
+}
+
+#cursos .wrapper {
+  padding: 100px;
+}
+
+.container-cursos {
   display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
   flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
 }
 
-.descricao h3 {
+.card-cursos {
+  margin-top: 20px;
+  max-width: 291px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-cursos h3 {
   color: #ff4081;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
+  text-align: center;
+  width: 344px;
 }
 
-.descricao p {
+.card-cursos p {
+  text-align: center;
   font-size: 17px;
-  font-weight: 300;
-  padding-bottom: 20px;
+  color: #000000;
 }
 
-.descricao {
-  width: 300px;
-  margin: 5%;
-}
-
-.comecar-agora {
-  background: #ff4081;
+.card-cursos a {
   border-radius: 62px;
-  padding: 8px 13px;
+  padding: 10px 40px;
+  border: 2px solid #ff4081;
   color: #fff;
+  background-color: #ff4081;
   font-size: 20px;
   font-weight: 400;
-  padding: 15px 40px;
-  width: 230px;
 }
 
-/* DEPOIMENTOS */
+/* RESPONSIVIDADE CURSOS */
 
-.depoimentos {
-  padding: 60px 0;
-  align-items: center;
-  max-width: 1600px;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  #cursos .wrapper {
+    padding: 10px;
+  }
+
+  .container-cursos {
+    justify-content: center;
+  }
+
+  .card-cursos h3 {
+    font-size: 20px;
+  }
+
+  .card-cursos p {
+    font-size: 15px;
+  }
+
+  .card-cursos img {
+    width: 70%;
+  }
+
+  .card-cursos a {
+    border-radius: 62px;
+    padding: 10px 20px;
+    font-size: 17px;
+  }
 }
 
-.depoimentos h2 {
+#comentarios .wrapper {
+  padding: 40px;
+}
+
+#comentarios .wrapper h2 {
   color: #009688;
   font-size: 37px;
   font-weight: 700;
-  padding: 0 60px;
+  margin-bottom: 40px;
 }
 
 .container-depoimentos {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
 }
 
-.depoimentos-texto {
+.card-depoimentos {
   display: flex;
-  width: 500px;
-  text-align: left;
+  width: 540px;
   align-items: center;
-  margin: 20px 0;
+  padding: 20px;
+  padding-left: 0;
 }
 
-.depoimentos-texto p {
+.card-depoimentos p {
+  color: #000000;
   font-size: 18px;
   font-weight: 300;
-  color: #000;
-  padding: 30px;
+  margin-left: 20px;
 }
 
-/* BLOG */
+/* RESPONSIVIDADE COMENTÁRIOS */
 
-.blog {
-  background-color: #f7f7f7;
-  padding: 60px 0;
-  align-items: center;
-  max-width: 1600px;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  .container-cursos {
+    justify-content: center;
+  }
+
+  #comentarios .wrapper h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .card-depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .card-depoimentos p {
+    font-size: 15px;
+    text-align: justify;
+    margin: 20px auto;
+    width: 80%;
+  }
 }
 
-.blog h2 {
+#blog {
+  background-color: #e5e5e5;
+}
+
+#blog .wrapper {
+  padding: 40px;
+}
+
+#blog .wrapper h2 {
   color: #009688;
   font-size: 37px;
   font-weight: 700;
-  padding: 0 60px;
 }
 
 .container-blog {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 40px 60px;
+  flex-wrap: wrap;
+  padding: 40px 0;
 }
 
-.blog-texto h3 {
-  color: #2e948a;
-  font-size: 26px;
-  margin-bottom: 0;
+.card-blog {
+  max-width: 320px;
+  margin-top: 20px;
 }
 
-.blog-texto p {
-  color: #000;
-  font-size: 20px;
-  margin-top: 0;
-  width: 320px;
+.card-blog h3 {
+  margin-top: 10px;
+  color: #009688;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.card-blog p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.button-todos-posts {
+  text-align: center;
+  margin: 30px;
 }
 
 .todos-posts {
-  text-decoration: none;
-  color: #ff4081;
-  font-size: 27px;
-  font-weight: 400;
-  padding: 8px 26px;
+  border-radius: 62px;
+  padding: 10px 20px;
   border: 2px solid #ff4081;
-  box-sizing: border-box;
-  border-radius: 62px;
-  margin: 0 auto;
-  text-align: center;
-  box-sizing: border-box;
-  display: block;
-  width: 289px;
+  color: #ff4081;
+  font-size: 25px;
 }
 
-/* RODAPE */
+/* RESPONSIVIDADE BLOG */
 
-footer {
-  background: #419488;
-  display: flex;
-  align-items: center;
-  height: 207px;
-  justify-content: space-around;
-}
+@media (max-width: 768px) {
+  #blog .wrapper {
+    padding: 30px;
+  }
 
-.menu-footer,
-.menu-mais-opcoes {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  #blog .wrapper h2 {
+    font-size: 30px;
+    text-align: center;
+  }
 
-.menu-footer-link {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
+  .container-blog {
+    justify-content: center;
+    padding: 0;
+  }
 
-.mais-opcoes-link {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 62px;
-  margin: 5px;
-  padding: 14px 41px;
-  width: 289px;
-  height: 51px;
-  text-align: center;
+  .card-blog h3 {
+    font-size: 23px;
+  }
+
+  .card-blog img {
+    width: 100%;
+  }
+
+  .card-blog p {
+    font-size: 15px;
+  }
+
+  .todos-posts {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
 }
